@@ -25,7 +25,7 @@ public class GettingSorted {
      * @return
      */
 
-    public static int[] bubble1 ( int[] unsorted ) {
+    int[] getSortedByBubbleArray(int[] unsorted) {
         int c = 0;
         boolean s = false;
         for (int i = 1; i < unsorted.length; i++ ) {
@@ -40,12 +40,10 @@ public class GettingSorted {
                 s = false;
             }
         }
-        System.out.println("This is bubble 1 sorting:");
-        System.out.println(Arrays.toString(unsorted));
         return unsorted;
     }
 
-    public static int[] AnotherSort (int[] unsorted) {
+    int[] AnotherSort (int[] unsorted) {
         long tStart = System.currentTimeMillis();
         int[] max = new int[3];
         /* must be a size 3 array: value(0) and position(1) of current max,
@@ -90,20 +88,13 @@ public class GettingSorted {
         System.out.println("Time elapsed " + elapsedSeconds + " seconds.");
         return unsorted;
     }
-    public static int[] IntArray() {
-        int[] unsorted = new int[10000];
+
+    int[] getRandomArray(int arrayLength, int integerBound) {
+        int[] unsorted = new int[arrayLength];
         Random rand = new Random();
         for( int i = 0; i < unsorted.length; i++ ) {
-            unsorted[i] = rand.nextInt(50);
+            unsorted[i] = rand.nextInt(integerBound);
         }
-        System.out.println(Arrays.toString(unsorted));
         return unsorted;
-    }
-
-    public static void main(String[] args) {
-//        int[] unsorted = new int[]{3, 8, 100, 324, 2, 3};
-        IntArray();
-        bubble1(IntArray());
-        AnotherSort(IntArray());
     }
 }
