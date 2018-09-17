@@ -4,12 +4,14 @@ public class Controller {
 
 
     public static void main(String[] args) {
-        GettingSorted gettingSorted = new GettingSorted();
+        RandomArray randomArray = new RandomArray();
+        int unsorted[] = randomArray.getRandomArray(30, 50);
 
-        int unsorted[] = gettingSorted.getRandomArray(30, 50);
-
+        Bubble1 bubble1 = new Bubble1();
         System.out.println("Bubble sorting method returns: \n"
                 + Arrays.toString(unsorted) + "\n"
-                + Arrays.toString(gettingSorted.getSortedByBubbleArray(unsorted)));
+                + Arrays.toString(bubble1.getSortedByBubble1Array(unsorted)));
+
+        Bubble2 bubble2 = new Bubble2();
     }
 }

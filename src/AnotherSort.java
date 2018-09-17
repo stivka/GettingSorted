@@ -7,7 +7,7 @@ import java.util.*;
  * @version 1.0
  * @since 28/11/2016.
  */
-public class GettingSorted {
+public class AnotherSort {
 
 
     int[] AnotherSort (int[] unsorted) {
