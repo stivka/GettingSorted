@@ -1,2 +1,5 @@
 # GettingSorted
-Exploration into sorting algorithms, to determine best usage scenarios for different algorithms and perhaps tap into the idea of a combined universal algorithm.
+Exploration into sorting algorithms
+
+Investigation of best usage scenarios for different algorithms
+Idea of a (perhaps combined) universal algorithm.
